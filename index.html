@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 13 | Web Layout</title>
+	<title>Day 14 | Web Layout</title>
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
@@ -24,8 +24,47 @@
 	
 	<main>
 		<section class="content">
-			<div class="main-content block"></div>
-		</section> <!-- end of .site-title -->
+			<div class="main-content block container"></div>
+		</section> <!-- end of .content -->
+
+		<section class="services content">
+			<div class="container flex">
+				<div class="service">		<!-- div.service*3>div+h3+p -->
+					<div class="block"></div>
+					<h3 class="heading text-center">Service Title 1</h3>
+					<p class="text-center primary">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Aliquid fugit, rerum dolorum! Eligendi quas, provident enim aspernatur fugiat maiores vero cupiditate nam quaerat,
+					</p>
+				</div>
+				<div class="service">
+					<div class="block"></div>
+					<h3 class="heading text-center">Service Title 2</h3>
+					<p class="text-center primary">
+					Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Deserunt aperiam nesciunt doloremque iste quas quo architecto fuga fugit commodi natus amet laudantium, nam nobis saepe,
+					</p>
+				</div>
+				<div class="service">
+					<div class="block"></div>
+					<h3 class="heading text-center">Service Title 3</h3>
+					<p class="text-center primary">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, impedit atque iure laudantium dolor aperiam minus nesciunt, soluta voluptatibus ipsa explicabo provident
+					</p>
+				</div> <!-- end of .service -->
+			</div> <!-- end of .container -->
+		</section> <!-- end of .services -->
+
+		<section class="highlighted content block">
+			<div class="container flex">
+				<div class="highlighted-thumbnail"></div>
+				<div class="highlighted-content flex">
+					<h3 class="heading primary">Highlighted Action Item</h3>
+					<P>
+						Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iste et necessitatibus dolores fuga molestiae soluta vitae ullam provident asperiores quas omnis impedit consequatur, amet hic, beatae ad, nulla ab, tenetur!
+					</P>
+					<a href="#">Read More</a>
+				</div>
+			</div> <!-- end of .container -->
+		</section> <!-- end of .highlighted.contect -->
 	</main>
 
 	<footer>
