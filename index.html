@@ -2,66 +2,99 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bootstrap demo Day 51</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<title>Day 52| Modal Box</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
-	<style>
-		.carousel-control-next-icon {
-			background-image: url(skip-next.png)
-		}
-	</style>
-  </head>
-</html>
-
+</head>
 <body>
-	<div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto mt-5" data-bs-ride="false">
-		<div class="carousel-indicators">
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4"></button>
-		</div>
-		<div class="carousel-inner rounded-5">
-		  <div class="carousel-item active">
-			<img src="https://images.unsplash.com/photo-1661101945601-036bc8bf7b36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Foresrt">
-			<div class="carousel-caption d-none d-md-block">
-			  <h5>First slide label</h5>
-			  <p>Some representative placeholder content for the first slide.</p>
-			</div>
-		  </div>
-		  <div class="carousel-item">
-			<img src="https://images.unsplash.com/photo-1661344662921-c711ebd1a295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Mountain">
-			<div class="carousel-caption d-none d-md-block">
-			  <h5>Second slide label</h5>
-			  <p>Some representative placeholder content for the second slide.</p>
-			</div>
-		  </div>
-		  <div class="carousel-item">
-			<img src="https://images.unsplash.com/photo-1661347257861-e3e4fb542541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Baby">
-			<div class="carousel-caption d-none d-md-block">
-			  <h5>Third slide label</h5>
-			  <p>Some representative placeholder content for the third slide.</p>
-			</div>
-		  </div>
-		  <div class="carousel-item">
-			<img src="https://images.unsplash.com/photo-1661345979331-b8178d997eae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="Car">
-			<div class="carousel-caption d-none d-md-block">
-			  <h5>Fourth slide label</h5>
-			  <p>Some representative placeholder content for the Four slide.</p>
-			</div>
-		  </div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</button>
-	  </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary d-block mx-auto my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+  
+<!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt vitae, nisi obcaecati perferendis unde ducimus, est deserunt voluptates ex officiis aspernatur nostrum suscipit cum eveniet. Voluptatem dolores ipsa debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo blanditiis incidunt fuga debitis sequi totam est neque, recusandae, aliquid optio nemo, aliquam distinctio? Tempora eos repudiandae ea iure recusandae.
+                </p>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+
+    <section class="d-flex">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click
+        </button>
+
+<!-- Vertically centered modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-dialog modal-dialog-centered">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias reprehenderit eligendi repellat repudiandae neque dolore quia, inventore voluptatem explicabo! Deleniti doloribus at magni ex suscipit dolorum labore molestiae mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est sit asperiores amet, architecto magnam iusto libero placeat illum numquam rem deleniti quod fugiat aliquid aspernatur perspiciatis hic nihil voluptates?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Happy Birthday to You
+    </button>
+<!-- Vertically centered scrollable modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, praesentium. Et, sit dolorem est id vel hic atque odio officiis, qui ut molestiae itaque, nesciunt distinctio ipsum facere. Quasi, reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quas officia delectus. Quam placeat culpa enim id ipsum voluptatibus tempore quae esse minima amet architecto dolorem soluta dolorum, velit perspiciatis.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
