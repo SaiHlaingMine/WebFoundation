@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 10 | TED like navigation</title>
+	<title>Day 11 | TED like navigation</title>
 	<style>
 		body {
 			background: #f3f8ee;
@@ -37,15 +37,49 @@
 		}
 		.main-nav {
 			display: flex;
+			align-items: center;
 		}
 		.main-nav li {
-			padding: 18px 12px;
+			padding: 20px 12px;
 			cursor: pointer;
 			text-transform: uppercase;
-			font-size: 22px;
+			font-size: 14px;
+			position: relative;
 		}
 		.main-nav li:hover {
 			background: #e3e3e3;
+		}
+		.main-nav li:hover > .sub-nav {
+			display: block;
+		}
+		.main-nav .sub-nav {
+			box-shadow: 0 0 4px #d3d3d3;
+			border-radius: 10px;
+			position: absolute;
+			background: #ffffff;
+			left: -118px;
+			top: 54px;
+			width: 300px;
+			display: none;
+		}
+		.main-nav .sub-nav-discover {
+			left: -106px;
+		}
+		.main-nav .sub-nav li a {
+			text-decoration: none;
+		}
+		.sub-nav .nav-head, .sub-nav .nav-desc {
+			display: block;
+			text-transform: none;
+		}
+		.sub-nav .nav-head {
+			color: #303030;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.sub-nav .nav-desc {
+			color: #808080;
+			margin: 8px 0;
 		}
 	</style>
 </head>
@@ -61,23 +95,78 @@
 			<li>
 				Watch
 				<ul class="sub-nav">
-					<li><a href="#">TED talks</a></li>
-					<li><a href="#">TED Recommends</a></li>
-					<li><a href="#">Playlists</a></li>
-					<li><a href="#">TED Series</a></li>
-					<li><a href="#">TED-Ed videos</a></li>
-					<li><a href="#">TEDX talks</a></li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TED talks</span>
+							<span class="nav-desc">Browse the library of TED talks and speakers</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TED Recommends</span>
+							<span class="nav-desc">Get TED Talks picked just for you</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">Playlists</span>
+							<span class="nav-desc">100+ collections of TED Talks, for curious minds</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TED Series</span>
+							<span class="nav-desc">Go deeper into fascinating topics with original video series from TED</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TED-Ed videos</span>
+							<span class="nav-desc">Watch, share and create lessons with TED-Ed</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TEDX talks</span>
+							<span class="nav-desc">Talks from independently organized local events</span>
+						</a>
+					</li>
 				</ul>
 			</li>
 			<li>
-			Discover
-			<ul class="sub-nav">
-				<li><a href="#">Topics</a></li>
-				<li><a href="#">Podcasts</a></li>
-				<li><a href="#">TED Books</a></li>
-				<li><a href="#">Ideas Blog</a></li>
-				<li><a href="#">Newsletter</a></li>
-			</ul>
+				Discover
+				<ul class="sub-nav sub-nav-discover">
+					<li>
+						<a href="#">
+							<span class="nav-head">Topics</span>
+							<span class="nav-desc">Explore TED offerings by topic</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">Podcasts</span>
+							<span class="nav-desc">TED's original podcast initiatives</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">TED Books</span>
+							<span class="nav-desc">Short books to feed your craving for ideas</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">Ideas Blog</span>
+							<span class="nav-desc">Our daily coverage of the world of ideas</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="nav-head">Newsletter</span>
+							<span class="nav-desc">Inspiration delivered straight to your inbox</span>
+						</a>
+					</li>
+				</ul>
 			</li>
 			<li>Attend</li>
 			<li>Participate</li>
