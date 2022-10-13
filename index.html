@@ -1,245 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 34 | Noobie</title>
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Josefin+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 40 | Noobie</title>
 
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
 
 </head>
 <body>
-	<div class="main">
-		<header class="flex">
-			<div class="logo flex align-center justify-center">
-				<a href="#">
-					<h1>Noobie</h1>
-				</a>
-			</div>
-			<nav class="navigation flex align-center justify-center">
-				<li><a href="#">Heros</a></li>
-				<li><a href="#">Items</a></li>
-				<li><a href="#">Updates</a></li>
-				<li><a href="#">Arts</a></li>
-			</nav>
-			<div class="social flex align-center">
-				<a href="#">
-					<img src="images/Social/Dicord.svg" alt="Discord">
-				</a>
-				<a href="#">
-					<img src="images/Social/Twitch.svg" alt="Twitch">
-				</a>
-				<a href="#">
-					<img src="images/Social/Youtube.svg" alt="Youtube">
-				</a>
-			</div>
-		</header>
+    <div class="main">
 
-		<section class="jumbotron flex">
+        <header class="grid">
+            <div class="logo header-item flex">
+                <a href="">
+                    <h2>Noobie</h2>
+                </a>
+            </div>
+            <div class="navigation header-item">
+                <nav class="flex">
+                    <li><a href="heros.html">Heros</a></li>
+                    <li><a href="#">Items</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Arts</a></li>
+                </nav>
+            </div>
+            <div class="social header-item">
+                <ul class="flex">
+                    <li>
+                        <a href="#">
+                            <img src="images/Social/Twitch.svg" alt="Twitch">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/Social/Dicord.svg" alt="Discord">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/Social/Youtube.svg" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-			<video autoplay muted loop>
-				<source src="videos/VDO.mp4" type="video/mp4">
-				<!-- <source src="videos/VDO.webm">
-				This browser does not support html5 video -->
-			</video>
-			
-			<div class="jumbotron-content">
-				<h1>The Legendry Game Played by Gods</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptates, provident nesciunt officia ducimus illo reiciendis architecto sunt molestiae accusamus tempora quibusdam officiis voluptas unde ad veritatis! Recusandae, exercitationem, fuga.
-				</p>
-				<a class="button" href="#">Play the Game</a>
-			</div>
-		</section> <!-- end of jumbotron -->
+        <section class="jumbotron grid">
+            <div class="video">
+                <video autoplay muted loop src="Videos/VDO.mp4"></video>
+            </div>
+            <div class="jumbo-content">
+                <h1>
+                    The Legendary Game Played by Gods
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni quasi maiores molestias. Dolorem ex accusamus saepe dolores.
+                </p>
+                <a class="button" href="https://dota2.com">Play the Game</a>
+            </div>
+        </section> <!-- end of .jumbotron -->
 
-			<section class="guides">
-			<div class="guide">
-				<p><small><strong>Safe Lane</strong></small></p>
-				<h4>Carry</h4>
-				<p>farming items, scaling fast and carrying the game.</p>
-			</div>
-			<div class="guide">
-				<p><small><strong>Mid Lane</strong></small></p>
-				<h4>Mid Core</h4>
-				<p>Dominating the Midlane, highest responsibility to keep the moral up and boost the team.</p>
-			</div>
-			<div class="guide">
-				<p><small><strong>Off Lane</strong></small></p>
-				<h4>Offliner</h4>
-				<p>Countering the enemy safelane, denying creeps, scaling to a semi core.</p>
-			</div>
-			<div class="guide">
-				<p><small><strong>Off lane, Jungle</strong></small></p>
-				<h4>Semi-Support</h4>
-				<p>High mobility, high flexibilit, ganker.</p>
-			</div>
-			<div class="guide">
-				<p><small><strong>Safe Lane</strong></small></p>
-				<h4>Main Support</h4>
-				<p>Gaving the carry a good time, keeping his back, stacking, pulling & warding</p>
-			</div>
-		
-		</section> <!-- end of guides -->
+        <section class="guides"> 
+            <div class="section-title">
+                <a href="#">
+                    <h1>Player Guides</h1>
+                </a>
+            </div>
 
-		<section class="news">
-			<div class="section-title">
-				<a href="#">
-					<h3>Latest News</h3>
-				</a>
-			</div>
+            <div class="guide-wrapper grid">
+                <div class="guide-item">
+                    <p><small><strong>Safe Lane</strong></small></p>
+                    <h4>Carry</h4>
+                    <p>
+                        Farming items, scaling fast and carrying the game
+                    </p>
+                </div>
+                <div class="guide-item">
+                    <p><small><strong>Mid Lane</strong></small></p>
+                    <h4>Mid Core</h4>
+                    <p>
+                        Dominating the mid lane, highest responibility to keep the morla up and boost the team
+                    </p>
+                </div>
+                <div class="guide-item">
+                    <p><small><strong>Offlane</strong></small></p>
+                    <h4>Offlainer</h4>
+                    <p>
+                        Countering the enemy safe lane, denying creeps and scaling to a semi core
+                    </p>
+                </div>
+                <div class="guide-item">
+                    <p><small><strong>Off Lane, Jungle</strong></small></p>
+                    <h4>Semi-Support</h4>
+                    <p>
+                        High mibility, high flexibility, ganker
+                    </p>
+                    
+                </div>
+                <div class="guide-item">
+                    <p><small><strong>Safe Lane</strong></small></p>
+                    <h4>Main Support</h4>
+                    <p>
+                        Giving the carry a good time, keeping his back, stacking, pulling and warding
+                    </p>
+                </div>
+            </div>
+        </section> <!-- end of .guides -->
+        
+        <section class="news">
+            <div class="section-title">
+                <a href="#">
+                    <h1>Latest News</h1>
+                </a>
+            </div>
 
-			<div class="news-wrapper">
-				<div class="news-item">
-					<div class="news-info flex">
-						<p><small><strong>19 July 2022</strong></small></p>
-						<p><small><strong>News</strong></small></p>
-					</div> 
-					<div class="news-content">
-						<a href="#">
-							<h4>Dota 2 Update - 7/18/2022</h4>
-						</a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus at eius quam culpa deleniti consectetur, veritatis harum mollitia modi totam iusto libero officiis, laboriosam nam provident nemo a accusamus.
-						</p>
-					</div>
-				</div>
+            <div class="news-wrapper grid">
 
-				<div class="news-item">
-					<div class="news-info flex">
-						<p><small><strong>25 June 2022</strong></small></p>
-						<p><small><strong>Announcement</strong></small></p>
-					</div> 
-					<div class="news-content">
-						<a href="#">
-							<h4>Short Film Contest</h4>
-						</a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus at eius quam culpa deleniti consectetur, veritatis harum mollitia modi totam iusto libero officiis, laboriosam nam provident nemo a accusamus.
-						</p>
-					</div>
-				</div>
+                <div class="news-item">
+                    <div class="news-info flex">
+                        <span>19 July 2022</span>
+                        <span>News</span>
+                    </div>
+                    <div class="news-content">
+                        <h4>Dota2 Update - 18/07/2022</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio assumenda corrupti fuga. Exercitationem deleniti facilis explicabo, inventore consequuntur ut ea eos illo, molestias aliquid repudiandae mollitia rerum accusantium ducimus similique.
+                        </p>
+                    </div>
+                </div>
 
-				<div class="news-item">
-					<div class="news-info flex">
-						<p><small><strong>22 June 2022</strong></small></p>
-						<p><small><strong>Announcement</strong></small></p>
-					</div> 
-					<div class="news-content">
-						<a href="#">
-							<h4>Chest of Endless Days</h4>
-						</a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus at eius quam culpa deleniti consectetur, veritatis harum mollitia modi totam iusto libero officiis, laboriosam nam provident nemo a accusamus.
-						</p>
-					</div>
-				</div>
+                <div class="news-item">
+                    <div class="news-info flex">
+                        <span>25 July 2022</span>
+                        <span>Announcements</span>
+                    </div>
+                    <div class="news-content">
+                        <h4>Short Film Contest</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio assumenda corrupti fuga. Exercitationem deleniti facilis explicabo, inventore consequuntur ut ea eos illo, molestias aliquid repudiandae mollitia rerum accusantium ducimus similique.
+                        </p>
+                    </div>
+                </div>
 
-				<div class="news-item">
-					<div class="news-info flex">
-						<p><small><strong>12 July 2022</strong></small></p>
-						<p><small><strong>News</strong></small></p>
-					</div> 
-					<div class="news-content">
-						<a href="#">
-							<h4>Dota 2 Update - 7/18/2022</h4>
-						</a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus at eius quam culpa deleniti consectetur, veritatis harum mollitia modi totam iusto libero officiis, laboriosam nam provident nemo a accusamus.
-						</p>
-					</div>
-				</div>
-			</div> <!-- end of news-wrapper -->
-		</section> <!-- end of news -->
+                <div class="news-item">
+                    <div class="news-info flex">
+                        <span>22 July 2022</span>
+                        <span>Announcements</span>
+                    </div>
+                    <div class="news-content">
+                        <h4>Chest of Endless Days</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio assumenda corrupti fuga. Exercitationem deleniti facilis explicabo, inventore consequuntur ut ea eos illo, molestias aliquid repudiandae mollitia rerum accusantium ducimus similique.
+                        </p>
+                    </div>
+                </div>
 
-		<section class="art">
-			<div class="section-title">
-				<a href="#">
-					<h3>Dota2 Fan Arts</h3>
-				</a>
-			</div>
+                <div class="news-item">
+                    <div class="news-info flex">
+                        <span>12 July 2022</span>
+                        <span>News</span>
+                    </div>
+                    <div class="news-content">
+                        <h4>Dota2 Update - 11/07/2022</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio assumenda corrupti fuga. Exercitationem deleniti facilis explicabo, inventore consequuntur ut ea eos illo, molestias aliquid repudiandae mollitia rerum accusantium ducimus similique.
+                        </p>
+                    </div>
+                </div>
 
-			<div class="art-wrapper">		<!-- div*12>a>img -->
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4.png" alt="Rubic"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4-1.png" alt="Warlock"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_2.png" alt="Minthargyi"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_3.png" alt="Lancer"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_4.png" alt="A"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_5.png" alt="B"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_6.png" alt="C"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_7.png" alt="D"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_8.png" alt="E"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_9.png" alt="F"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_10.png" alt="G"></a></div>
-				<div class="art-item"><a href="#"><img src="images/Art/Rectangle4_11.png" alt="H"></a></div>
-			</div>
-		</section><!-- end of art -->
+            </div>
+        </section> <!-- end of .news -->
 
-		<footer>
-			<div class="footer-item">  <!--  div.footer-item*3 -->
-				<div class="footer-head">
-					<h3>Watch Live</h3>
-				</div>
-				<div class="footer-content">
-					<iframe src="https://www.youtube.com/embed/_OSc6CfBpFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="footer-item">
-				<div class="footer-head">
-					<h3>Connect</h3>
-				</div>
-				<div class="footer-content">
-					<ul class="footer-social">
-						<li>
-							<a href="#"	class="flex">
-								<img src="images/Social/Email.svg" alt="Email">
-								Send us email
-							</a>
-						</li>
-						<li>
-							<a href="#"	class="flex">
-								<img src="images/Social/Dicord.svg" alt="Discord">
-								Join our discord channel
-							</a>
-						</li>
-						<li>
-							<a href="#"	class="flex">
-								<img src="images/Social/Rss.svg" alt="Rss">
-								Subscribe our newsfeed
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer-item">
-				<div class="footer-head">
-					<h3>Sitemap</h3>
-				</div>
-				<div class="footer-content">
-					<nav class="footer-navigation">
-						<li><a href="#">Heros</a></li>
-						<li><a href="#">Items</a></li>
-						<li><a href="#">Updates</a></li>
-						<li><a href="#">Arts</a></li>
-					</nav>
-				</div>
-			</div>
-		</footer>
-	</div> <!-- end of main -->
+        <section class="arts">
+            <div class="section-title">
+                <a href="#">
+                    <h1>Dota 2 Fan Arts</h1>
+                </a>
+            </div>
 
+            <div class="art-wrapper grid">
+                <div class="action-image"><img src="images/Fanarts/Art1.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art2.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art3.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art4.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art5.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art6.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art7.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art8.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art9.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art10.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art11.png" alt=""></div>
+                <div class="action-image"><img src="images/Fanarts/Art12.png" alt=""></div>
+            </div>
+        </section> <!-- end of .arts -->
 
-	<script>
-		const guides = document.querySelectorAll('.guide');
-		guides.forEach(function (e) {
-			e.addEventListener('click', function() {
-				location.href = "https://dota2.com"
-			});
-		});
-	</script>
+        <footer class="grid">
+            <div class="foot-item">
+                <div class="foot-heading">
+                    <h4>Watch Live</h4>
+                </div>
+                <div class="foot-content">
+                    <iframe src="https://www.youtube.com/embed/MMB2Vw9gtSo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
 
+            <div class="foot-item">
+                <div class="foot-heading">
+                    <h4>Connect</h4>
+                </div>
+                <div class="foot-content">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex">
+                                <img src="images/Social/Email.svg" alt="Email">
+                                Send Us Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">
+                                <img src="images/Social/Dicord.svg" alt="Discord">
+                                Join Our Discord Channel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">
+                                <img src="images/Social/Rss.svg" alt="Rss">
+                                Subscribe Our Newsfeed
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-item">
+                <div class="foot-heading">
+                    <h4>Site Map</h4>
+                </div>
+                <div class="foot-content">
+                    <nav class="flex">
+                        <li><a href="heros.html">Heros</a></li>
+                        <li><a href="#">Items</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Arts</a></li>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- end of .main -->
 </body>
 </html>
