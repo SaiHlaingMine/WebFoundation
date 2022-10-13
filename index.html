@@ -3,112 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 7</title>
+	<title>Day 8</title>
 
-<style>
-	.radius {
-		border-radius: 10px;
-	}
-	.border-style {
-		border: 1px solid #e6e8ea;
-	}
-	.spacing {
-		padding: 10px;
-	}
-	.input-styled {		/*class သည် အစစာလုံး မှာ english letter ပဲဖြစ်ရမယ်*/
-		width: 400px;
-	}
-	body {
-		font-size: 14px;
-	}
-	td:first-child {
-		width: 150px;
-		color: 	#575a6f;
-	}
-	.submit-btn {
-		padding		: 	10px 30px;
-		background	: 	#8431d5;
-		color		: 	#ffffff;
-		border-radius: 10px;
-		border		: none;		/*remove border*/
-		text-transform: uppercase;
-		cursor: 	pointer;
-	}
-	.submit-btn:hover	{
-		background: 	#672ba2;
-	}
-	.reset-btn {
-		background		: 	none;
-		border			: 	none;
-		color			: 	#8431d5;
-		cursor			: 	pointer;
-	}
-	.reset-btn:hover {
-		color			: #672ba2;
-		text-decoration: underline;
-		
-	}
-</style>
+	<style>
+		body{
+			background: whitesmoke;
+			margin: 0;
+		}
+		nav {
+			background: #ffffff;
+			border-bottom: 1px solid #e3e3e3;
+		}
+		ul{
+			margin: 0;
+			display: flex;
 
+		}
+		nav ul li {
+			list-style: none;
+		}
+		nav ul li a {
+			text-decoration: none;
+			padding: 7px 10px;
+		}
+	</style>
 </head>
 <body>
+	<nav>
+		<ul>			<!-- ul>li*4>a -->
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
 
-	<h1>Student Registration Form</h1>
-
-	<form action="#">
-
-		<table cellpadding="7px">
-			<tr>
-				<td align="right"><label for="name">Name</label></td>				<!-- label => tab -->
-				<td>
-					<!-- input:test.input-style.radius.border-style -->
-
-					<input class="input-styled radius border-style spacing" required type="text" placeholder="Input your full name" name="name" id="name"></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="dob">Date of Birth</label></td>
-				<td><input class="radius border-style spacing" type="date" name="dob" id="dob"></td>
-			</tr>
-			<tr>
-				<td align="right">Gender</td>
-				<td>
-					<input type="radio" name="gender" id="male">
-					<label for="male">Male</label>
-					<input type="radio" name="gender" id="female">
-					<label for="female">Female</label>
-				</td>
-			</tr>
-			<tr>
-				<td align="right"><label for="email">Email</label></td>
-				<td><input class="input-styled radius border-style spacing" type="email" name="email" id="email"></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="class">Class</label></td>
-				<td>
-					<select class="input-styled radius border-style spacing" name="class" id="class">
-						<option value="kg">Kinder Garden</option>
-						<option value="g1">Grade 1</option>
-						<option value="g2">Grade 2</option>
-						<option value="g3">Grade 3</option>
-						<option value="g4">Grade 4</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td align="right"><label for="pp">Profile Picture</label></td>
-				<td><input type="file" name="pp" id="pp"></td>
-			</tr>
-			<tr>
-				<td align="right" valign="top"><label for="address">Address</label></td>
-				<td><textarea class="input-styled radius border-style spacing" name="address" id="address" cols="30" rows="5"></textarea></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input class="submit-btn" type="submit" value="Submit">
-					<input class="reset-btn" type="reset" value="Reset">
-				</td>
-			</tr>
-		</table>
-	</form>
 </body>
 </html>
