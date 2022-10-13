@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 31 | Noobie</title>
+	<title>Day 32 | Noobie</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,33 +14,33 @@
 
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<a href="#">
-				<h1>Noobie</h1>
-			</a>
-		</div>
-		<nav class="navigation">
-			<li><a href="#">Heros</a></li>
-			<li><a href="#">Items</a></li>
-			<li><a href="#">Updates</a></li>
-			<li><a href="#">Arts</a></li>
-		</nav>
-		<div class="social">
-			<a href="#">
-				<img src="images/Social/Dicord.svg" alt="Discord">
-			</a>
-			<a href="#">
-				<img src="images/Social/Twitch.svg" alt="Twitch">
-			</a>
-			<a href="#">
-				<img src="images/Social/Youtube.svg" alt="Youtube">
-			</a>
-		</div>
-	</header>
+	<div class="main">
+		<header class="flex">
+			<div class="logo flex align-center justify-center">
+				<a href="#">
+					<h1>Noobie</h1>
+				</a>
+			</div>
+			<nav class="navigation flex align-center justify-center">
+				<li><a href="#">Heros</a></li>
+				<li><a href="#">Items</a></li>
+				<li><a href="#">Updates</a></li>
+				<li><a href="#">Arts</a></li>
+			</nav>
+			<div class="social flex align-center">
+				<a href="#">
+					<img src="images/Social/Dicord.svg" alt="Discord">
+				</a>
+				<a href="#">
+					<img src="images/Social/Twitch.svg" alt="Twitch">
+				</a>
+				<a href="#">
+					<img src="images/Social/Youtube.svg" alt="Youtube">
+				</a>
+			</div>
+		</header>
 
-	<section class="jumbotron">
-		<div class="container flex">
+		<section class="jumbotron flex">
 
 			<video autoplay muted loop>
 				<source src="videos/VDO.mp4" type="video/mp4">
@@ -55,7 +55,46 @@
 				</p>
 				<a class="button" href="#">Play the Game</a>
 			</div>
-		</div>
-	</section> <!-- end of jumbotron -->
+		</section> <!-- end of jumbotron -->
+
+			<section class="guides">
+			<div class="guide">
+				<p><small><strong>Safe Lane</strong></small></p>
+				<h4>Carry</h4>
+				<p>farming items, scaling fast and carrying the game.</p>
+			</div>
+			<div class="guide">
+				<p><small><strong>Mid Lane</strong></small></p>
+				<h4>Mid Core</h4>
+				<p>Dominating the Midlane, highest responsibility to keep the moral up and boost the team.</p>
+			</div>
+			<div class="guide">
+				<p><small><strong>Off Lane</strong></small></p>
+				<h4>Offliner</h4>
+				<p>Countering the enemy safelane, denying creeps, scaling to a semi core.</p>
+			</div>
+			<div class="guide">
+				<p><small><strong>Off lane, Jungle</strong></small></p>
+				<h4>Semi-Support</h4>
+				<p>High mobility, high flexibilit, ganker.</p>
+			</div>
+			<div class="guide">
+				<p><small><strong>Safe Lane</strong></small></p>
+				<h4>Main Support</h4>
+				<p>Gaving the carry a good time, keeping his back, stacking, pulling & warding</p>
+			</div>
+		
+		</section> <!-- end of guides -->
+	</div> <!-- end of main -->
+
+	<script>
+		const guides = document.querySelectorAll('.guide');
+		guides.forEach(function (e) {
+			e.addEventListener('click', function() {
+				location.href = "https://dota2.com"
+			});
+		});
+	</script>
+
 </body>
 </html>
