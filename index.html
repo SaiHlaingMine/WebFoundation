@@ -41,30 +41,38 @@
 
 </head>
 <body>
-	
-	<div>
-		<input type="text" name="taskinput" id="taskinput">
-		<button id="add">Add Task</button>
-	</div>
+    <form id='taskform' action="#">
+        <input type="text" name="taskinput" id="taskinput">
+        <button id="add">Add Task</button>
+    </form>
 
 	<ul id="tasks"></ul>
 
 	<script src="jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script>
-		$('#add').click(function () {
-			if ($('#taskinput').val() == '') {
+
+        $('#taskform').submit(function (e) {
+            e.preventDefault()
+            addTask ()
+        })    
+        function addTask () {
+            if ($('#taskinput').val() == null) {
 				alert('You need to type something in the input')
 			} else {
 				$('#tasks').append("<li class='task'>" + $('#taskinput').val() + "</li>")
 				$('#taskinput').val('')
 			}
-		})
+        }
 
         $(document).on('click', '.task', function () {
             $(this).html('<s>' + $(this).text() + '</s>')
             $(this).css('color', 'green')
         })
 
+		$( function() {
+			$('#tasks').sortable()	
+		})
 		// let data = localStorage.getItem('tasks') ? localStorage.getItem('tasks').split(',') : []
 
 		// data.forEach(function (val) {
