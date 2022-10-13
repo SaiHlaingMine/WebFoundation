@@ -3,192 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 12 | TED like navigation</title>
-	<style>
-		body {
-			background: #f3f8ee;
-			padding: 0;
-			margin: 0;
-		}
-		nav {
-			background: #ffffff;
-			box-shadow: 2px 0 2px #c0c0c0;
-			display: flex;
-			justify-content: space-between;
-		}
-		ul {
-			padding: 0;
-			margin: 0;
-		}
-		ul li {
-			list-style: none;
-		}
-		.brand a {
-			display: flex;
-			text-decoration: none;
-			align-items: center;
-		}
-		.brand a h1 {
-			margin: 0;
-			padding: 0;
-			font-weight: 200;
-			color: #707070;
-			font-size: 22px;
-		}
-		.main-nav {
-			display: flex;
-			align-items: center;
-		}
-		.main-nav li {
-			padding: 20px 0;
-			width: 90px;
-			cursor: pointer;
-			text-transform: uppercase;
-			font-size: 14px;
-			position: relative;
-			text-align: center;
-		}
-		.main-nav li:hover {
-			background: #e3e3e3;
-		}
-		.main-nav li:hover > .sub-nav {
-			display: block;
-		}
-		.main-nav .sub-nav {
-			box-shadow: 0 0 4px #d3d3d3;
-			border-radius: 10px;
-			position: absolute;
-			background: #ffffff;
-			left: -118px;
-			top: 54px;
-			width: 300px;
-			display: none;
-		}
-		.main-nav .sub-nav-discover {
-			left: -106px;
-		}
-		.main-nav .sub-nav li a {
-			text-decoration: none;
-		}
-		.sub-nav .nav-head, .sub-nav .nav-desc {
-			display: block;
-			text-transform: none;
-		}
-		.sub-nav .nav-head {
-			color: #303030;
-			font-size: 16px;
-			font-weight: bold;
-		}
-		.sub-nav .nav-desc {
-			color: #808080;
-			margin: 5px 0;
-		}
-		.sub-nav li {
-			width: 100%;
-			text-align: left;
-			padding: 	5px 10px;
-			box-sizing: border-box;
-		}
-		#membership {
-				background: #e62b1e;
-				color: #ffffff;
-				padding: 7px 10px;
-				border-radius: 7px;
-		}
-	</style>
+	<title>Day 13 | Web Layout</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav>
-		<div class="brand">
-			<a href="#">
-				<svg xmlns="http://www.w3.org/2000/svg" width="96" height="54" viewBox="0, 0, 96, 54" class="Main-nav__logo"><title>TED</title><rect x="0" y="0" width="640" height="360" fill="none"></rect><path d="M21.244 21.053h-6.761V14.85h21.012v6.203h-6.762V39.15h-7.489V21.053zm15.414-6.203h20.43v6.203H44.147v2.992h12.941v5.837H44.147v3.065h12.941v6.203h-20.43v-24.3zm21.666 0h12.287c8.071 0 10.906 5.984 10.906 12.114 0 7.443-3.926 12.186-12.36 12.186H58.324v-24.3zm7.489 18.097h2.908c4.653 0 5.308-3.794 5.308-6.056 0-1.533-.509-5.765-5.89-5.765H65.74l.073 11.821z" fill="#E62B1E"></path></svg>
-				<h1>Ideas worth spreading</h1>
-			</a>	
-		</div>
-		<ul class="main-nav">
-			<li>
-				Watch
-				<ul class="sub-nav">
-					<li>
-						<a href="#">
-							<span class="nav-head">TED talks</span>
-							<span class="nav-desc">Browse the library of TED talks and speakers</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">TED Recommends</span>
-							<span class="nav-desc">Get TED Talks picked just for you</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">Playlists</span>
-							<span class="nav-desc">100+ collections of TED Talks, for curious minds</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">TED Series</span>
-							<span class="nav-desc">Go deeper into fascinating topics with original video series from TED</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">TED-Ed videos</span>
-							<span class="nav-desc">Watch, share and create lessons with TED-Ed</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">TEDX talks</span>
-							<span class="nav-desc">Talks from independently organized local events</span>
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				Discover
-				<ul class="sub-nav sub-nav-discover">
-					<li>
-						<a href="#">
-							<span class="nav-head">Topics</span>
-							<span class="nav-desc">Explore TED offerings by topic</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">Podcasts</span>
-							<span class="nav-desc">TED's original podcast initiatives</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">TED Books</span>
-							<span class="nav-desc">Short books to feed your craving for ideas</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">Ideas Blog</span>
-							<span class="nav-desc">Our daily coverage of the world of ideas</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="nav-head">Newsletter</span>
-							<span class="nav-desc">Inspiration delivered straight to your inbox</span>
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>Attend</li>
-			<li>Participate</li>
-			<li>About</li>
-			<li>Sign In</li>
-			<li id="membership">Membership</li>
-			<li>a</li>
-		</ul>
-	</nav>
+	<header class="block flex">
+		<h1 class="site-title">
+			<a href="#" class="primary">Novice Wizzards</a>
+		</h1> <!-- end of .site-title -->
+
+		<nav class="navigation flex">
+			<li><a href="#" class="primary">Home</a></li>
+			<li><a href="#" class="primary">Blog</a></li>
+			<li><a href="#" class="primary">Portolio</a></li>
+			<li><a href="#" class="primary">About</a></li>
+		</nav>	<!-- end of .site-title -->
+	</header>
+	
+	<main>
+		<section class="content">
+			<div class="main-content block"></div>
+		</section> <!-- end of .site-title -->
+	</main>
+
+	<footer>
+		
+	</footer>
 </body>
 </html>
