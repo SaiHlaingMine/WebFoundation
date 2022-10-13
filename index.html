@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 58 | Jquery</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Day 62 | Task List</title>
 
-    <style>
-        #hiddenblock {
-            width: 500px;
-            height: 50px;
-            background: cyan;
-        }
+	<style>
+		body {
+			background:  #fefefe;
+		}
+		#tasks {
+			width:  450px;
+		}
+		#tasks li {
+			list-style:  none;
+			padding: 10px 15px;
+			margin: 5px;
+			border-radius: 5px;
+			border: 1px solid #dedede;
+			background:  #ffffff;
+			transition: all 0.2s;
+		}
+		#tasks li:hover {
+			background:  #fafafa;
+			cursor: pointer;
+			margin: 5px 2px;
+			box-shadow: 0 0 7px #d9d9d9;
+		}
+		#taskinput {
+			padding: 7px 10px;
+		    width: 300px;
+		    border: 2px solid #dedede;
+		    border-radius: 5px;
+		    margin-left:  60px;
+		}
+		#add {
+			padding: 7px 10px;
+		}
+	</style>
 
-        #canvas {
-            width: 100px;
-            height: 50px;
-            background: blue;
-        }
-           
-
-        #fade, #anotherfade {
-            width: 100px;
-            height: 100px;
-            background: green;
-            display: inline-block;
-        }
-
-        #anotherfade {
-            background: brown;
-        }
-    </style>
 </head>
 <body>
-    <button id="clickme">Toggle Block</button>
-    <div class="hiddenbox"></div>
+	
+	<div>
+		<input type="text" name="taskinput" id="taskinput">
+		<button id="add">Add Task</button>
+	</div>
 
-    <div id="canvas"></div>
-    <h3 id="shower"></h3>
+	<ul id="tasks"></ul>
 
-    <section>
-        <button id="fadeout">Fadeout</button>
-        <div id="fade"></div>
-        <div id="anotherfade"></div>
-    </section>
-    <script src="jquery-3.6.1.min.js"></script>
-    <script>
-        $('#clickme').click(function () {
-            $('#hiddenblock').toggle()
+	<script src="jquery-3.6.1.min.js"></script>
+	<script>
+		$('#add').click(function () {
+			if ($('#taskinput').val() == '') {
+				alert('You need to type something in the input')
+			} else {
+				$('#tasks').append("<li class='task'>" + $('#taskinput').val() + "</li>")
+				$('#taskinput').val('')
+			}
+		})
+
+        $(document).on('click', '.task', function () {
+            $(this).html('<s>' + $(this).text() + '</s>')
+            $(this).css('color', 'green')
         })
 
-        $('canvas').click(function(e) { show_event(e) })
-        $('canvas').hover(function(e) { show_event(e) })
-        $('canvas').dblclick(function(e) { show_event(e) })
+		// let data = localStorage.getItem('tasks') ? localStorage.getItem('tasks').split(',') : []
 
-        function show_event (e) {
-            $('shower').html('Event type : ' + e.type)
-        }
+		// data.forEach(function (val) {
+		// 	$('#tasks').append('<li>' + val + '</li>')
+		// })
 
-        $('#fadeout').click(function () {
-            if ($(this).text() == 'Fadeout') {
-                $(this).text('Fadein')
-            } else {
-                $(this).text('Fadeout')
-            }
+		// $('#add').click(function () {
+		// 	if ($('#taskinput').val() == '') {
+		// 		alert('You need to type something in the input')
+		// 	} else {
+		// 		$('#tasks').append("<li>" + $('#taskinput').val() + "</li>")
+		// 		data.push($('#taskinput').val())
 
-            $('#fade').fadeToggle(3000, 'swing', function () {
-                $('#anotherfade').fadeToggle()
-            })
+		// 		$('#taskinput').val('')
 
-        })
-    </script>
+		// 		localStorage.setItem('tasks', data)
+		// 	}
+		// })
+
+		// const taskinput = document.getElementById('taskinput')
+		// const addbtn = document.getElementById('add')
+		// const tasks = document.getElementById('tasks')
+
+		// addbtn.addEventListener('click', function () {
+		// 	if (taskinput.value == '') {
+		// 		alert('Input is needed')
+		// 	} else {
+		// 		let task = document.createElement('li')
+		// 		let textnode = document.createTextNode(taskinput.value)
+
+		// 		task.appendChild(textnode)
+		// 		tasks.appendChild(task)
+
+		// 		taskinput.value = ''
+		// 	}
+
+		// })
+	</script>
+
+
+
 </body>
 </html>
