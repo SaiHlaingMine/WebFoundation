@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 11 | TED like navigation</title>
+	<title>Day 12 | TED like navigation</title>
 	<style>
 		body {
 			background: #f3f8ee;
@@ -40,11 +40,13 @@
 			align-items: center;
 		}
 		.main-nav li {
-			padding: 20px 12px;
+			padding: 20px 0;
+			width: 90px;
 			cursor: pointer;
 			text-transform: uppercase;
 			font-size: 14px;
 			position: relative;
+			text-align: center;
 		}
 		.main-nav li:hover {
 			background: #e3e3e3;
@@ -79,7 +81,19 @@
 		}
 		.sub-nav .nav-desc {
 			color: #808080;
-			margin: 8px 0;
+			margin: 5px 0;
+		}
+		.sub-nav li {
+			width: 100%;
+			text-align: left;
+			padding: 	5px 10px;
+			box-sizing: border-box;
+		}
+		#membership {
+				background: #e62b1e;
+				color: #ffffff;
+				padding: 7px 10px;
+				border-radius: 7px;
 		}
 	</style>
 </head>
@@ -172,7 +186,7 @@
 			<li>Participate</li>
 			<li>About</li>
 			<li>Sign In</li>
-			<li>Membership</li>
+			<li id="membership">Membership</li>
 			<li>a</li>
 		</ul>
 	</nav>
