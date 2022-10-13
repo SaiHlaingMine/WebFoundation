@@ -3,62 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Day 5</title>
-	<style>
-		body{
-			background: #f0f0f0;
-		}
-		div {
-			Background: #ffffff;
-			padding: 30px;
-			margin: 30px;
+	<title>Day 6</title>
 
-			border: 1px solid #3e3e3e;
-			border-radius: 10px;
+<style>
+	body {
+		font-size: 14px;
+	}
 
-			box-shadow: 1px 1px 5px #999999;
-			
+</style>
 
-
-		}
-		h1	{
-			border-bottom: 5px dotted #909090;
-			padding-left: 15px;
-			line-height: 1.3em;
-		}
-		a {
-			border: 1px solid #3e3e3e;
-			background: darkgray;
-			padding: 5px 15px 5px 15px; /*top right bottom left*/
-			/*padding: 5px 15px;*/	/*top/bottom right/left*/
-			color: #ffffff;
-
-			text-decoration: none;
-			text-transform: uppercase;
-			border-radius: 5px;
-
-
-		}
-	</style>
 </head>
 <body>
-	<div>
-		<h1>
-		This is the title of the post
-		</h1>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eaque cupiditate voluptates quaerat harum, odio animi, temporibus labore obcaecati blanditiis placeat neque deleniti repudiandae tempore consequuntur, saepe distinctio voluptatum, ut.
-		</p>
-		<a href="#">Read More</a>
-	</div>
-	<div>
-		<h1>
-		This is the title of the post
-		</h1>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eaque cupiditate voluptates quaerat harum, odio animi, temporibus labore obcaecati blanditiis placeat neque deleniti repudiandae tempore consequuntur, saepe distinctio voluptatum, ut.
-		</p>
-		<a href="#">Read More</a>
-	</div>
+
+	<h1>Student Registration Form</h1>
+
+	<form action="#">
+
+		<table>
+			<tr>
+				<td><label for="name">Name</label></td>				<!-- label => tab -->
+				<td><input required type="text" placeholder="Input your full name" name="name" id="name"></td>
+			</tr>
+			<tr>
+				<td><label for="dob">Date of Birth</label></td>
+				<td><input type="date" name="dob" id="dob"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="male">
+					<label for="female">female</label>
+					<input type="radio" name="gender" id="female">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="email">Email</label></td>
+				<td><input type="email" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td><label for="class">Class</label></td>
+				<td>
+					<select name="class" id="class">
+						<option value="kg">Kinder Garden</option>
+						<option value="g1">Grade 1</option>
+						<option value="g2">Grade 2</option>
+						<option value="g3">Grade 3</option>
+						<option value="g4">Grade 4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="pp">Profile Picture</label></td>
+				<td><input type="file" name="pp" id="pp"></td>
+			</tr>
+			<tr>
+				<td><label for="address">Address</label></td>
+				<td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
