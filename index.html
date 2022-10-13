@@ -4,32 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 57 | Jquery</title>
+    <title>Day 58 | Jquery</title>
 
     <style>
-        .styled {
-            display: block;
-            background: blue;
-            color: white;
-            box-shadow: 2px 2px 2px #000000;
-        }
-
-        .hiddenbox {
-            width: 300px;
+        #hiddenblock {
+            width: 500px;
             height: 50px;
             background: cyan;
-            display: none;
+        }
+
+        #canvas {
+            width: 100px;
+            height: 50px;
+            background: blue;
+        }
+           
+
+        #fade, #anotherfade {
+            width: 100px;
+            height: 100px;
+            background: green;
+            display: inline-block;
+        }
+
+        #anotherfade {
+            background: brown;
         }
     </style>
 </head>
 <body>
-    <button id="clickme">Show/Hide Hidden Box</button>
+    <button id="clickme">Toggle Block</button>
     <div class="hiddenbox"></div>
 
+    <div id="canvas"></div>
+    <h3 id="shower"></h3>
+
+    <section>
+        <button id="fadeout">Fadeout</button>
+        <div id="fade"></div>
+        <div id="anotherfade"></div>
+    </section>
     <script src="jquery-3.6.1.min.js"></script>
     <script>
-        $('#clickme').click(function(){
-            $('.hiddenbox').toggle()
+        $('#clickme').click(function () {
+            $('#hiddenblock').toggle()
+        })
+
+        $('canvas').click(function(e) { show_event(e) })
+        $('canvas').hover(function(e) { show_event(e) })
+        $('canvas').dblclick(function(e) { show_event(e) })
+
+        function show_event (e) {
+            $('shower').html('Event type : ' + e.type)
+        }
+
+        $('#fadeout').click(function () {
+            if ($(this).text() == 'Fadeout') {
+                $(this).text('Fadein')
+            } else {
+                $(this).text('Fadeout')
+            }
+
+            $('#fade').fadeToggle(3000, 'swing', function () {
+                $('#anotherfade').fadeToggle()
+            })
+
         })
     </script>
 </body>
