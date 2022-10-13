@@ -1,225 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 40 | Noobie</title>
-
-    <link rel="stylesheet" href="styles/reset.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/small.css">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap demo</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <div class="main">
-        <header class="grid">
-            <div class="logo header-item flex">
-                <a href="index.html">
-                    <h2>Noobie</h2>
-                </a>
-            </div>
-            <div class="navigation header-item">
-                <nav class="flex">
-                    <li><a href="heros.html">Heros</a></li>
-                    <li><a href="#">Items</a></li>
-                    <li><a href="#">Updates</a></li>
-                    <li><a href="#">Arts</a></li>
-                </nav>
-            </div>
-            <div class="social header-item">
-                <ul class="flex">
-                    <li>
-                        <a href="#">
-                            <img src="images/Social/Twitch.svg" alt="Twitch">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Social/Dicord.svg" alt="Discord">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Social/Youtube.svg" alt="Youtube">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+	<div class="container border-bottom">
+		<div class="row align-items-center">
+			<div class="col">
+				<a class="text-secondary" href="#">Subscribe</a>
+			</div>
+			<div class="col text-center">
+				<a class="text-dark" href="#">
+					<h1>Large</h1>
+				</a>
+			</div>
+			<div class="col text-end">
+				<a class="p-2 me-2 text-secondary text-decoration-none" href="#">
+					<i class="bi bi-search"></i>
+				</a>
+				<a class="btn btn-outline-secondary" href="#">Sign Up</a>
+			</div>
+		</div> 
+	</div>
 
-        <section class="page-title">
-            <h1 class="title">Select Your Hero</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus sapiente soluta nemo. Provident suscipit sed fugit voluptatibus, deserunt alias fugiat eum iure facere, vitae molestiae doloremque? Aliquam, sunt laborum.
-            </p>
-        </section> <!-- end of .page-title -->
-
-        <section class="hero-filter grid">
-            <div class="filter-item filter">
-                <h4>Filter</h4>
-
-                <div class="filter-wrapper flex">
-                    <div class="attribute agaility"></div>
-                    <div class="attribute strength"></div>
-                    <div class="attribute intel"></div>
-                </div>
-            </div>
-            <div class="filter-item sort">
-                <h4>Sort</h4>
-
-                <div class="filter-wrapper flex">
-                    <div class="attribute"></div>
-                    <div class="attribute"></div>
-                </div>
-            </div>
-            <div class="filter-item search flex">
-                <input type="text" placeholder="Search your hero">
-            </div>
-        </section> <!-- end of .hero-filter -->
-
-        <section class="heros grid">
-            <div class="action-image">
-                <img src="images/Heros/abaddon.png" alt="Abaddon">
-                <h4>Abaddon</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/alchemist.png" alt="Alchemist">
-                <h4>Alchemist</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/ancient_apparition.png" alt="Ancient Apparition">
-                <h4>Ancient Apparition</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/antimage.png" alt="Antimage">
-                <h4>Anitmage</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/arc_warden.png" alt="Arc Warden">
-                <h4>Arc Warden</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/axe.png" alt="Axe">
-                <h4>Axe</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/bane.png" alt="Bane">
-                <h4>Bane</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/batrider.png" alt="Batrider">
-                <h4>Batrider</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/beastmaster.png" alt="Beastmaster">
-                <h4>Beastmaster</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/bloodseeker.png" alt="Bloodseeker">
-                <h4>Bloodseeker</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/bounty_hunter.png" alt="Bounty Hunter">
-                <h4>Bounty Hunter</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/brewmaster.png" alt="Brewmaster">
-                <h4>Brewmaster</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/bristleback.png" alt="Bristleback">
-                <h4>Bristleback</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/broodmother.png" alt="Broodmother">
-                <h4>Broodmother</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/centaur.png" alt="Centaur">
-                <h4>Centaur</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/chaos_knight.png" alt="Chaos Knight">
-                <h4>Chaos Knight</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/chen.png" alt="Chen">
-                <h4>Chen</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/clinkz.png" alt="Clinkz">
-                <h4>Clinkz</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/crystal_maiden.png" alt="Crystal Maiden">
-                <h4>Crystal Maiden</h4>
-            </div>
-            <div class="action-image">
-                <img src="images/Heros/rattletrap.png" alt="Rattletrap">
-                <h4>Rattletrap</h4>
-            </div>
-        </section>
-
-
-        <footer class="grid">
-            <div class="foot-item">
-                <div class="foot-heading">
-                    <h4>Watch Live</h4>
-                </div>
-                <div class="foot-content">
-                    <iframe src="https://www.youtube.com/embed/MMB2Vw9gtSo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="foot-item">
-                <div class="foot-heading">
-                    <h4>Connect</h4>
-                </div>
-                <div class="foot-content">
-                    <ul>
-                        <li>
-                            <a href="#" class="flex">
-                                <img src="images/Social/Email.svg" alt="Email">
-                                Send Us Email
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex">
-                                <img src="images/Social/Dicord.svg" alt="Discord">
-                                Join Our Discord Channel
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex">
-                                <img src="images/Social/Rss.svg" alt="Rss">
-                                Subscribe Our Newsfeed
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="foot-item">
-                <div class="foot-heading">
-                    <h4>Site Map</h4>
-                </div>
-                <div class="foot-content">
-                    <nav class="flex">
-                        <li><a href="#">Heros</a></li>
-                        <li><a href="#">Items</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Arts</a></li>
-                    </nav>
-                </div>
-            </div>
-        </footer>
-    </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
